@@ -2,7 +2,7 @@
 
 ## A programming language for concurrent dataflow.
 
-Torq Lang is a "source available" project hosted at GitHub.
+**Torq Lang is a "source available" project hosted at GitHub.**
 
 Website: [Torq Lang Home Page](http://torq-lang.github.io)
 
