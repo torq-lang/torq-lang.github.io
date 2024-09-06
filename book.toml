@@ -1,0 +1,12 @@
+[book]
+authors = ["glennosborne"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Torq Programming Language"
+
+[build]
+build-dir = "docs"
+
+[output.html]
+google-analytics = "G-Y2GSHPDEDN"
