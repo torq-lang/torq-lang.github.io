@@ -6,9 +6,20 @@ Torq is a novel fusion of multiple paradigms, borrowing from imperative, functio
 
 Torq is designed to improve scalability, responsiveness, and faster time-to-market in three problem areas:
 
-1. Data contextualization - enhancing live data meaningfully before it is stored or shared
+1. Data contextualization - enhancing live data meaningfully before it is stored
 2. Enterprise convergence - composing meaningful APIs across departments and divisions
 3. Situational applications - creating low-cost, low-code, highly-valued applications quickly
+
+<dl>
+    <dt>Data contextualization</dt>
+    <dd>Modern data fuels analytics and artificial intelligence. To make data specifically meaningful, it needs preprocessing, contextualization, and additional features before reaching storage. Torq enhances existing dataflows efficiently with related data to help reveal insights that would otherwise go unseen.</dd>
+    <dt>Enterprise convergence</dt>
+    <dd>Enterprise workflows require applications spanning multiple departments and divisions. Initiatives, such as the "Unified Name Space," aim to tear down traditional silos. Torq provides a dynamic platform to unify the enterprise with composable services that integrate departments and divisions.</dd>
+    <dt>Situational applications</dt>
+    <dd>Recent advancements have enabled solutions that were out of reach only a few years ago, creating a massive demand for new solutions. Low-code platforms help citizen developers reduce software backlogs. Torq is a truly low-code platform that scales and executes efficiently.</dd>
+</dl>
+
+Torq is a dynamic, gradually typed, concurrent programming language with novel ease-of-use and efficiency.
 
 ## Available for Java and Rust
 
