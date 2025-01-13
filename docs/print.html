@@ -8,7 +8,15 @@
 
 
         <!-- Custom HTML head -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2GSHPDEDN"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
         
+          gtag('config', 'G-Y2GSHPDEDN');
+        </script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -175,11 +183,27 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="welcome"><a class="header" href="#welcome">Welcome</a></h1>
-<p>The Torq Programming Language is a new model for creating simple but sophisticated dataflow servers.</p>
+<h2 id="the-torq-programming-language"><a class="header" href="#the-torq-programming-language">The Torq Programming Language</a></h2>
+<p>Torq is a novel fusion of multiple paradigms, borrowing from imperative, functional, object-oriented, and logic programming. Although Torq is heavily inspired by the Oz programming model, which aims to unify programming paradigms, Torq is fundamentally different. Most notably, Oz imposes a store of shared dataflow variables on all threads participating in its concurrency model. Conversely, Torq uses an actor model for concurrency and hides dataflow variables as an implementation detail, resulting in a new programming model that integrates easily with existing languages and runtimes.</p>
+<p>Torq is designed to improve scalability, responsiveness, and faster time-to-market in three problem areas:</p>
+<ol>
+<li>Data contextualization - enhancing live data meaningfully before it is stored</li>
+<li>Enterprise convergence - composing meaningful APIs across departments and divisions</li>
+<li>Situational applications - creating low-cost, low-code, highly-valued applications quickly</li>
+</ol>
+<dl>
+    <dt>Data contextualization</dt>
+    <dd>Modern data fuels analytics and artificial intelligence. To make data specifically meaningful, it needs preprocessing, contextualization, and additional features before reaching storage. Torq enhances existing dataflows efficiently with related data to help reveal insights that would otherwise go unseen.</dd>
+    <dt>Enterprise convergence</dt>
+    <dd>Enterprise workflows require applications spanning multiple departments and divisions. Initiatives, such as the "Unified Name Space," aim to tear down traditional silos. Torq provides a dynamic platform to unify the enterprise with composable services that integrate departments and divisions.</dd>
+    <dt>Situational applications</dt>
+    <dd>Recent advancements have enabled solutions that were out of reach only a few years ago, creating a massive demand for new solutions. Low-code platforms help citizen developers reduce software backlogs. Torq is a truly low-code platform that scales and executes efficiently.</dd>
+</dl>
+<p>Torq is a dynamic, gradually typed, concurrent programming language with novel ease-of-use and efficiency.</p>
 <h2 id="available-for-java-and-rust"><a class="header" href="#available-for-java-and-rust">Available for Java and Rust</a></h2>
 <p>Torq for Java</p>
 <ul>
-<li><a href="https://torq-lang.github.io/book-jv">The Book</a></li>
+<li><a href="https://torq-lang.github.io/torq-jv-book">The Book</a></li>
 <li><a href="https://github.com/torq-lang/torq-jv">GitHub</a></li>
 </ul>
 <p>Torq for Rust (work in progress)</p>
@@ -407,23 +431,23 @@ Licensor: Torqware LLC
 
         </div>
 
-
-        <!-- Google Analytics Tag -->
+        <!-- Livereload script (if served using the cli tool) -->
         <script>
-            var localAddrs = ["localhost", "127.0.0.1", ""];
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
 
-            // make sure we don't activate google analytics if the developer is
-            // inspecting the book locally...
-            if (localAddrs.indexOf(document.location.hostname) === -1) {
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'G-Y2GSHPDEDN', 'auto');
-                ga('send', 'pageview');
+            window.onbeforeunload = function() {
+                socket.close();
             }
         </script>
+
 
 
         <script>
