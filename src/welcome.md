@@ -19,7 +19,7 @@ Torq is designed to improve scalability, responsiveness, and faster time-to-mark
     <dd>Recent advancements have enabled solutions that were out of reach only a few years ago, creating a massive demand for new solutions. Low-code platforms help citizen developers reduce software backlogs. Torq is a truly low-code platform that scales and executes efficiently.</dd>
 </dl>
 
-Torq is a dynamic, gradually typed, concurrent programming language with novel ease-of-use and efficiency.
+Torq is a dynamic, structurally typed, concurrent programming language with novel ease-of-use and efficiency.
 
 ## Available for Java and Rust
 
